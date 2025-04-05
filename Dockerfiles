@@ -5,3 +5,7 @@ RUN npm install
 EXPOSE 3000
 CMD ["npm", "start"]
 npx create-react-app testapp
+docker build .
+docker run -d --rm --name container-name -p 3000:3000 docker image-id
+docker build -t docker-name:01 .
+
